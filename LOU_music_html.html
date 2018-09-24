@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>What's Up Louisville?</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/flex_bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script/LOU_JS.js"></script>
+
+</head>
+<body class="bg-danger text-white">
+
+<!--  navigation bar  -------------->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+  <a class="navbar-brand text-danger" href="#">What's UP?</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="menu_options collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LOU_education_html.html">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LOU_festival_html.html">Festivals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LOU_music_html.html">Live Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LOU_markets_html.html">Markets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LOU_Sports_html.html">Sports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LOU_tech_html.html">Technology</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Reset</button>
+    </form>
+    </div>
+  </div>
+<button  class="btn btn-outline-info ml-auto" data-toggle="modal" data-target="#interest" data-show="true">View your events</button>
+
+</nav>
+<!--  navigation bar end  ------------>
+
+<!--start of MY Events list form -->
+<div class="modal " id="interest" role="dialog">
+<div class="modal-dialog">
+
+ <!-- Modal content-->
+ <div class="modal-content">
+   <div class="modal-header">
+     <button type="button" class="close" data-dismiss="modal">&times;</button>
+     <h4 class="modal-title">My Events</h4>
+   </div>
+   <div class="modal-body">
+
+<table id="eventlist" class = "table-warning text-danger table-responsive">
+  <thead>
+<TR id="table_header">
+  <th class = "event_heading heading bg-dark" >Event Name</th>
+  <th class = "venue_heading heading bg-dark">Venue</th>
+  <th class = "start_heading heading bg-dark">Start Date</th>
+  <th class = "time_heading heading bg-dark">Start Time</th>
+  </tr>
+</thead>
+</table>
+
+
+   </div>
+   <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+     <button type="button" class="btn btn-default" data-dismiss="modal">Add to Calendar</button>
+   </div>
+ </div>
+
+</div>
+</div>
+<!--end of MY Events list form -->
+
+<!--  jumbotron  --------------------->
+<div id="banner" class="jumbotron jumbotron-fluid">
+  <div class="container text-sm-center pt-3">
+    <h1 class="display-4 title">What's up LOUISVILLE?</h1>
+    <p class="lead">Your source for what's going on in Louisville.</p>
+    <br>
+  <br>
+    <br>
+      <br>
+  </div>
+</div>
+<!--  end jumbotron  ------------------>
+
+<!--  Social media buttons  -------------->
+<div class="container-fluid row text-center">
+<div class='col'>
+<div class="btn-group buttons"><a href="mailto:lvl1kdh@ups.com"><button type="button" class="btn btn-danger btn-lg fa fb fa-envelope-o fa-1x"></button></a></div>
+</div>
+
+<div class='col'>
+<div class="btn-group buttons"><a href="https://www.facebook.com/kory.howell.92"><button type="button" class="btn btn-danger btn-lg fa fa-facebook fa-1x"id="target1"></button></a></div>
+</div>
+<div class='col'>
+<div class="btn-group buttons"><a href="https://www.instagram.com/79koryvette/"><button type="button" class="btn btn-danger btn-lg fa fa-instagram fa-1x"></button></a></div>
+</div>
+<div class='col'>
+<div class="btn-group buttons"><a href="https://www.linkedin.com/in/kory-howell-946315b8"><button type="button" class="btn btn-danger btn-lg fa fa-linkedin fa-1x"></button></a></div>
+</div>
+<div class='col'>
+<div class="btn-group buttons"><a href="https://twitter.com/koryvette"><button type="button" class="btn btn-danger btn-lg fa fa-twitter fa-1x"></button></a></div>
+</div>
+</div>
+<!--  end social media  -------------->
+
+<div>
+<p class="intro text-sm-center pt-1">What's up Louisville?  We've scoured the internet and compiled a list of what's up in Louisville.  Don't sit home wondering what events are happening around you. </p>
+</div>
+
+    <div class="container-fluid">
+      <div class="row align-items-start">
+        <div class="categories col-md-3 col-lg-1 mr-auto">
+ <!-- menu options div  ---------------->
+
+    <p class="locations home bg-danger text-white">Check out these links:</p>
+    <p class="locations fourth"><a href="http://www.4thstlive.com/" target="_blank">4th Street Live</a></p>
+    <p class="locations churchill"><a href="https://www.churchilldowns.com/" target="_blank">Churchill Downs</a></p>
+    <p class="locations comedy"><a href="http://www.laughingderby.com/home" target="_blank">Comedy Caravan</a></p>
+    <p class="locations headliners"><a href="http://headlinerslouisville.com/events/" target="_blank">Headliners Music Hall</a></p>
+    <p class="locations amphi"><a href="https://www.iroquoisamphitheater.com/" target="_blank">Iroquois Amphitheater</a></p>
+    <p class="locations yum"><a href="https://www.kfcyumcenter.com/" target="_blank">KFC Yum Center</a></p>
+    <p class="locations kfec"><a href="https://kyexpo.org/kec/eventCalendar.aspx" target="_blank">Ky Fair and Expo Center</a></p>
+    <p class="locations jbspeed"><a href="http://www.speedmuseum.org/events-programs/" target="_blank">Speed Art museum</a></p>
+    <p class="locations kyca"><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></p>
+    <p class="locations mellwood"><a href="http://www.mellwoodartcenter.com/" target="_blank">Mellwood Arts Center</a></p>
+    <p class="locations mercury"><a href="http://www.mercuryballroom.com/" target="_blank">Mercury Ballroom</a></p>
+    <p class="locations dragway"><a href="http://www.ohiovalleydragway.com/" target="_blank">Ohio Valley Raceway</a></p>
+    <p class="locations palace"><a href="http://www.louisvillepalace.com/" target="_blank">Palace Theatre</a></p>
+    <p class="locations slugger"><a href="https://www.milb.com/louisville" target="_blank">Slugger Field</a></p>
+    <p class="locations gocards"><a href="http://gocards.com/index.aspx" target="_blank">University of Louisville</a></p>
+    <p class="locations waylon"><a href="https://waylonslouisville.com/" target="_blank">Waylon's Feed</a></p>
+    <p class="locations library"><a href="http://lfpl.org/" target="_blank">Public Library</a></p>
+
+
+  </div> <!-- end of categories div ------>
+
+<div class="col-md-9 col-lg-9 mr-auto">
+<div class="main_content">
+<h1 class="event-type text-xs-center"><strong>Concerts</strong></h1>
+<caption> There's always something going on.  Check out this list of concert, live music and other events going on.</caption>
+
+<table class = "event_table table-warning text-danger table-striped table-responsive">
+  <thead>
+<TR id="table_header">
+  <th class = "event_heading heading bg-dark" >Event Name</th>
+  <th class = "venue_heading heading bg-dark">Venue</th>
+  <th class = "start_heading heading bg-dark">Start Date</th>
+  <th class = "time_heading heading bg-dark">Start Time</th>
+  <th class = "city_heading heading bg-dark">City</th>
+  <th class = "desc_heading heading bg-dark">Description</th>
+  <th class = "type_heading heading bg-dark">Event Type</th>
+  </tr>
+</thead>
+<tbody id="table_of_events">
+  <TR>
+  <TD class= "text-dark  ">An Evening with Guided By Voices Celebrating Headliners Music Hall's 20th Anniversary&#10;<BR></TD>
+  <TD class= "text-dark  "><a  href="http://headlinerslouisville.com/events/" target="_blank">Headliners Music Hall</a></TD>
+  <TD class= "text-dark  ">7/6/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">The Pretenders</TD>
+  <TD class= "text-dark  "><a  href="http://www.louisvillepalace.com/#http://www.louisvillepalace.com/" target="_blank">Palace Theatre</a></TD>
+  <TD class= "text-dark  ">7/10/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Journey with Def Leppard</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">7/11/2018</TD>
+  <TD class= "text-dark  ">19:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Promising to be the Tour of the Year, two of the world's greatest rock bands - DEF LEPPARD and JOURNEY - are teaming up for a massive co-headlining North American tour composed of both stadium and arena concerts, half the shows being closed by Journey and</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Forecastle Fest 2018</TD>
+  <TD class= "text-dark  "><a  href="http://www.forecastlefest.com" target="_blank">Waterfront Park</a></TD>
+  <TD class= "text-dark  ">7/13/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">THE FORECASTLE FESTIVAL is a port-of-call where the world gathers to experience the best in Music, Art, and Activism. A celebration of sights, sounds, and sustainability, Forecastle connects travelers North, South, East, and West. Merging entertainment w</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Shania Twain: NOW</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">7/20/2018</TD>
+  <TD class= "text-dark  ">19:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Shania Twain is hitting the road in support of her new album, Now. She'll stop at KFC Yum! Center in Louisville on Friday, July 20, 2018!  <BR>Shania is a five-time GRAMMY Award-winner and the reigning Queen of Country Pop. With more than 90 million albums s</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Smashing Pumpkins "Shiny and Oh So Bright Tour"</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">7/21/2018</TD>
+  <TD class= "text-dark  ">19:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">GRAMMY - Award-winning, acclaimed alternative rock pioneers The Smashing Pumpkins today announced the Shiny And Oh So Bright Tour, their first tour in nearly 20 years to feature founding members Billy Corgan, Jimmy Chamberlin, and James Iha.  <BR>The monument</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Turn The Page - Tribute to Bob Seger</TD>
+  <TD class= "text-dark  "><a  href="http://www.mercuryballroom.com/" target="_blank">Mercury Ballroom</a></TD>
+  <TD class= "text-dark  ">7/21/2018</TD>
+  <TD class= "text-dark  ">21:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">WFPK Waterfront Wednesday</TD>
+  <TD class= "text-dark  "><a  href="http://www.wfpk.org" target="_blank">Waterfront Park</a></TD>
+  <TD class= "text-dark  ">7/25/2018</TD>
+  <TD class= "text-dark  ">17:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Free concert series</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Sugarland "Still the Same" Tour</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">7/28/2018</TD>
+  <TD class= "text-dark  ">19:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+    <TD class= "text-dark  ">Award-winning Country duo Sugarland announced their highly-anticipated return to the stage with the Still The Same Tour, beginning this Spring in the U.S. With numerous Grammy, ACM and CMA Awards, chart-topping hits and MULTI-PLATINUM sales, the pair's Je</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Saved By The 90's</TD>
+  <TD class= "text-dark  "><a  href="http://www.mercuryballroom.com/" target="_blank">Mercury Ballroom</a></TD>
+  <TD class= "text-dark  ">7/28/2018</TD>
+  <TD class= "text-dark  ">21:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Rod Stewart with special guest Cyndi Lauper</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">7/29/2018</TD>
+  <TD class= "text-dark  ">19:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Singer/Songwriter Rod Stewart, the two-time Rock &amp; Roll Hall of Fame-music icon, today announced plans for an extensive North American summer tour.  Following the incredible success and rave reviews for their 2017 summer tour, Stewart has invited the lege</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Tory Lanez</TD>
+  <TD class= "text-dark  "><a  href="http://www.mercuryballroom.com/" target="_blank">Mercury Ballroom</a></TD>
+  <TD class= "text-dark  ">7/30/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Nahko &amp; Medicine for the People with Raye Zaragoza&#10;<BR></TD>
+  <TD class= "text-dark  "><a  href="http://headlinerslouisville.com/events/" target="_blank">Headliners Music Hall</a></TD>
+  <TD class= "text-dark  ">8/5/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">An Evening With Lindsey Stirling</TD>
+  <TD class= "text-dark  "><a  href="https://www.iroquoisamphitheater.com/" target="_blank">Iroquois Amphitheater</a></TD>
+  <TD class= "text-dark  ">8/7/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Black Moth Super Rainbow with The Stargazer Lilies &amp; Air Credits&#10;<BR></TD>
+  <TD class= "text-dark  "><a  href="http://headlinerslouisville.com/events/" target="_blank">Headliners Music Hall</a></TD>
+  <TD class= "text-dark  ">8/11/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">The Four Horsemen - Tribute to Metallica</TD>
+  <TD class= "text-dark  "><a  href="http://www.mercuryballroom.com/" target="_blank">Mercury Ballroom</a></TD>
+  <TD class= "text-dark  ">8/11/2018</TD>
+  <TD class= "text-dark  ">21:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">*SOLD OUT* Tyler Childers </TD>
+  <TD class= "text-dark  "><a  href="http://headlinerslouisville.com/events/" target="_blank">Headliners Music Hall</a></TD>
+  <TD class= "text-dark  ">8/16/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Emporium &amp; Production Simple Presents An Evening With Umphrey's McGee</TD>
+  <TD class= "text-dark  "><a  href="https://www.iroquoisamphitheater.com/" target="_blank">Iroquois Amphitheater</a></TD>
+  <TD class= "text-dark  ">8/25/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">AC Ent. &amp; Production Simple Present The Flaming Lips</TD>
+  <TD class= "text-dark  "><a  href="https://www.iroquoisamphitheater.com/" target="_blank">Iroquois Amphitheater</a></TD>
+  <TD class= "text-dark  ">8/26/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">WFPK Waterfront Wednesday</TD>
+  <TD class= "text-dark  "><a  href="http://www.wfpk.org" target="_blank">Waterfront Park</a></TD>
+  <TD class= "text-dark  ">8/29/2018</TD>
+  <TD class= "text-dark  ">17:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Free concert series</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Fall Out Boy: The M A N I A Tour with Machine Gun Kelly</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">9/12/2018</TD>
+  <TD class= "text-dark  ">19:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">After months of anticipation, multi-platinum selling, Grammy-nominated Chicago band Fall Out Boy released their seventh studio album MANIA on Island Records/DCD2 Records. <BR>Fall Out Boy will bring M A  N   I    A on the road to 25+ U.S. cities be</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Maroon 5 "Red Pill Blues Tour"</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/#https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">9/22/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Three-time GRAMMY - Award-winning multiplatinum band Maroon 5 have announced the first details of their upcoming 2018 world tour produced by Live Nation, which is happening in conjunction with the release of their highly anticipated new studio album, Red P</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">WFPK Waterfront Wednesday</TD>
+  <TD class= "text-dark  "><a  href="http://www.wfpk.org;/" target="_blank">Waterfront Park</a></TD>
+  <TD class= "text-dark  ">9/26/2018</TD>
+  <TD class= "text-dark  ">17:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Free concert series</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Keith Urban Graffiti U World Tour</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/#https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">10/20/2018</TD>
+  <TD class= "text-dark  ">19:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Keith Urban Graffiti U World Tour is coming to the KFC Yum! Center on October 20th!  Keith Urban's shows have become concert events that electrify. They're unexpected, if not unpredictable, and have been hailed by media around the world as aconcert</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Candlebox</TD>
+  <TD class= "text-dark  "><a  href="http://www.mercuryballroom.com/" target="_blank">Mercury Ballroom</a></TD>
+  <TD class= "text-dark  ">10/21/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Elton John: Farewell Yellow Brick Road</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/#https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">10/23/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Prepare to be dazzled by the incomparable Elton John! <BR>Farewell Yellow Brick Road will be his last ever tour. Tickets for the October 23rd show in Louisville go on sale Feb. 2 at 10am</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">JOE BONAMASSA</TD>
+  <TD class= "text-dark  "><a  href="http://www.louisvillepalace.com/#http://www.louisvillepalace.com/" target="_blank">Palace Theatre</a></TD>
+  <TD class= "text-dark  ">11/15/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Metallica: WorldWired Tour 2019</TD>
+  <TD class= "text-dark  "><a  href="https://www.kfcyumcenter.com/#https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">3/9/2019</TD>
+  <TD class= "text-dark  ">19:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">Metallica's WorldWired Tour returns to North America this Fall. Following last summer's 25 date sold-out stadium run, this year Metallica is bringing the in-the-round production currently being seen in European arenas to the U.S. and Canada kicking off on</TD>
+  <TD class= "text-dark  ">Concert</TD>
+  </TR>
+</tbody>
+</table>
+<br>
+<br>
+
+<h1 class="event-type text-xs-center"><strong>On-Stage</strong></h1>
+<br>
+<table class = "event_table table-warning text-danger table-striped table-responsive">
+  <thead>
+<TR id="table_header">
+  <th class = "event_heading heading bg-dark" >Event Name</th>
+  <th class = "venue_heading heading bg-dark">Venue</th>
+  <th class = "start_heading heading bg-dark">Start Date</th>
+  <th class = "time_heading heading bg-dark">Start Time</th>
+  <th class = "city_heading heading bg-dark">City</th>
+  <th class = "desc_heading heading bg-dark">Description</th>
+  <th class = "type_heading heading bg-dark">Event Type</th>
+  </tr>
+</thead>
+<tbody id="table_of_events">
+  <TR>
+  <TD class= "text-dark  ">Harry Potter and the Prisoner of Azkaban in Concert</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">7/7/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Miranda Sings Live... No Offense</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">7/28/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Dan and Phil World Tour 2018 - Interactive Introverts</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">8/2/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">An Evening with Lindsey Stirling</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">8/7/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Cirque Du Soleil Corteo</TD>
+  <TD class= "text-dark  "><a href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">8/15/2018</TD>
+  <TD class= "text-dark  ">19:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">There's a joyous procession of revellers headed to Louisville - can you hear it?  <BR>Corteo, which means "cortege" in Italian, is a joyous procession, a festive parade imagined by a clown. The show brings together the passion of the actor with the grace and</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Cirque Du Soleil Corteo</TD>
+  <TD class= "text-dark  "><a href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">8/16/2018</TD>
+  <TD class= "text-dark  ">19:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">There's a joyous procession of revellers headed to Louisville - can you hear it?  <BR>Corteo, which means "cortege" in Italian, is a joyous procession, a festive parade imagined by a clown. The show brings together the passion of the actor with the grace and</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Cirque Du Soleil Corteo</TD>
+  <TD class= "text-dark  "><a href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">8/17/2018</TD>
+  <TD class= "text-dark  ">19:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">There's a joyous procession of revellers headed to Louisville - can you hear it?  <BR>Corteo, which means "cortege" in Italian, is a joyous procession, a festive parade imagined by a clown. The show brings together the passion of the actor with the grace and</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Cirque Du Soleil Corteo</TD>
+  <TD class= "text-dark  "><a href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">8/18/2018</TD>
+  <TD class= "text-dark  ">15:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">There's a joyous procession of revellers headed to Louisville - can you hear it?  <BR>Corteo, which means "cortege" in Italian, is a joyous procession, a festive parade imagined by a clown. The show brings together the passion of the actor with the grace and</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Cirque Du Soleil Corteo</TD>
+  <TD class= "text-dark  "><a href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">8/18/2018</TD>
+  <TD class= "text-dark  ">19:30:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">There's a joyous procession of revellers headed to Louisville - can you hear it?  <BR>Corteo, which means "cortege" in Italian, is a joyous procession, a festive parade imagined by a clown. The show brings together the passion of the actor with the grace and</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Cirque Du Soleil Corteo</TD>
+  <TD class= "text-dark  "><a href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">8/19/2018</TD>
+  <TD class= "text-dark  ">13:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">There's a joyous procession of revellers headed to Louisville - can you hear it?  <BR>Corteo, which means "cortege" in Italian, is a joyous procession, a festive parade imagined by a clown. The show brings together the passion of the actor with the grace and</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Cirque Du Soleil Corteo</TD>
+  <TD class= "text-dark  "><a href="https://www.kfcyumcenter.com/" target="_blank">KFC YUM Center</a></TD>
+  <TD class= "text-dark  ">8/19/2018</TD>
+  <TD class= "text-dark  ">17:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">There's a joyous procession of revellers headed to Louisville ' can you hear it?  <BR>Corteo, which means "cortege" in Italian, is a joyous procession, a festive parade imagined by a clown. The show brings together the passion of the actor with the grace and</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Romeo + Juliet</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">9/7/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Christopher Titus: Live Tour</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">9/15/2018</TD>
+  <TD class= "text-dark  ">20:00:00</TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Mozart</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">10/12/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">The Brown-Forman Nutcracker</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">12/8/2018</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Human Abstract</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">2/28/2019</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Cinderella</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">4/5/2019</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+  <TR>
+  <TD class= "text-dark  ">Hamilton</TD>
+  <TD class= "text-dark  "><a href="http://www.kentuckycenter.org/" target="_blank">Ky Center for the Arts</a></TD>
+  <TD class= "text-dark  ">6/4/2019</TD>
+  <TD></TD>
+  <TD class= "text-dark  ">Louisville</TD>
+  <TD class= "text-dark  ">N/A</TD>
+  <TD class= "text-dark  ">Theater</TD>
+  </TR>
+</tbody>
+
+
+</table>
+
+
+  </div> <!-- end main-content div -->
+</div> <!--container end-->
+
+        <div class="col-lg-2 d-none d-xl-block">
+          <div class="thumbnail">
+            <a href="https://www.kfcyumcenter.com" target="_blank">
+              <img  src="img/featured/EddieGriffin.jpg" class="img-rounded .img-responsive" alt="Eddie Griffin" style="width:100%">
+              <div class="caption">
+                <p>See Eddie Griffin live!!</p>
+              </div>
+            </a>
+            <a href="https://www.kfcyumcenter.com" target="_blank">
+              <img src="img/featured/Maroon5.jpg" class="img-rounded .img-responsive" alt="Maroon5" style="width:100%">
+              <div class="caption">
+                <p>See Maroon 5 live!!</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div> <!--container end-->
+
+    </div>
+</div>
+
+
+
+<!--    FOOOTER ---------------------->
+
+<footer class="main_footer bg-dark">
+ <span class="footer">Don't see your event?  Click   <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#newevent">HERE</button>
+
+ </footer>
+
+<!--    FORM MODAL ------------------->
+<div class="modal fade" id="newevent" tabindex="-1" role="dialog" aria-labelledby="newevent" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger">
+        <h5 class="modal-title" id="createEvent">New Event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><!-- New Event form  ------->
+
+<form>
+  <div class="form-group"><!-- Event name  ------->
+    <label class="form_heading" for="formGroupExampleInput">Event Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Event Name">
+  </div>
+  <div class="form-group"><!-- Where event is located  -->
+    <label class="form_heading" for="formGroupExampleInput2">Venue</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Event Venue">
+  </div>
+
+<div class="form-row"><!-- When is event ------->
+ <label class="col-lg-12 form_heading">Event Date</label>
+
+ <div class="form-group col-md">
+   <select class="custom-select form-control" id="exp-month">
+  <option value="1">1 - January</option>
+  <option value="2">2 - February</option>
+  <option value="3">3 - March</option>
+  <option value="4">4 - April</option>
+  <option value="5">5 - May</option>
+  <option value="6">6 - June</option>
+  <option value="7">7 - July</option>
+  <option value="8">8 - August</option>
+  <option value="9">9 - September</option>
+  <option value="10">10 - October</option>
+  <option value="11">11 - November</option>
+  <option value="12">12 - December</option>
+</select>
+  </div>
+
+
+  <div class="form-group col-md">
+  <select class="custom-select form-control" id="day">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    </select>
+  </div>
+
+
+<div class="form-group col-sm">
+  <select class="custom-select form-control" id="year">
+  <option value="2016">2018</option>
+  <option value="2017">2019</option>
+  <option value="2018">2020</option>
+  <option value="2019">2021</option>
+  <option value="2020">2022</option>
+</select>
+ </div>
+
+ <div class="form-group col-sm">
+   <select class="custom-select form-control" id="start-time">
+     <option value="700">7:00 A.M</option>
+     <option value="730">7:30 A.M</option>
+     <option value="800">8:00 A.M</option>
+     <option value="830">8:30 A.M</option>
+     <option value="900">9:00 A.M</option>
+     <option value="900">9:30 A.M</option>
+     <option value="1000">10:00 A.M</option>
+     <option value="1030">10:30 A.M</option>
+     <option value="1100">11:00 A.M</option>
+     <option value="1130">11:30 A.M</option>
+     <option value="1200">12:00 P.M</option>
+     <option value="1230">12:30 P.M</option>
+     <option value="1300">1:00 P.M</option>
+     <option value="1330">1:30 P.M</option>
+     <option value="1400">2:00 P.M</option>
+     <option value="1430">2:30 P.M</option>
+     <option value="1500">3:00 P.M</option>
+     <option value="1530">3:30 P.M</option>
+     <option value="1600">4:00 P.M</option>
+     <option value="1630">4:30 P.M</option>
+     <option value="1700">5:00 P.M</option>
+     <option value="1730">5:30 P.M</option>
+     <option value="1800">6:00 P.M</option>
+     <option value="1830">6:30 P.M</option>
+     <option value="1900">7:00 P.M</option>
+     <option value="1930">7:30 P.M</option>
+     <option value="2000">8:00 P.M</option>
+     <option value="2030">8:30 P.M</option>
+     <option value="2100">9:00 P.M</option>
+     <option value="2130">9:30 P.M</option>
+     <option value="2200">10:00 P.M</option>
+     <option value="2230">10:30 P.M</option>
+     <option value="2300">11:00 P.M</option>
+     <option value="2330">11:30 P.M</option>
+ </select>
+  </div>
+</div>
+
+
+<div class="form-group">
+<label class="form_heading">Event Type</label><!-- Event type  ------->
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">Auto Racing</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">Comedy</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+  <label class="form-check-label" for="exampleRadios2">Concert</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+  <label class="form-check-label" for="exampleRadios2">Festival</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+  <label class="form-check-label" for="exampleRadios2">Foodie</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6">
+  <label class="form-check-label" for="exampleRadios2">Horse Racing</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="option7">
+  <label class="form-check-label" for="exampleRadios2">Market/Shopping</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios8" value="option8">
+  <label class="form-check-label" for="exampleRadios2">Sports</label>
+ </div>
+</div>
+
+
+
+<div class="form-group">
+<label class="form_heading">Event options</label><!-- Event options  ------->
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">Kid friendly?</label>
+</div>
+
+ <div class="form-check">
+   <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+   <label class="form-check-label" for="defaultCheck2">Free</label>
+  </div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+  <label class="form-check-label" for="defaultCheck3">$$$$</label>
+ </div>
+
+ <div class="form-check">
+   <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+   <label class="form-check-label" for="defaultCheck4">Pets OK?</label>
+  </div>
+</div>
+
+
+<div class="form-group"><!-- Event description  -->
+  <label class="form_heading" for="formGroupExampleInput3">Comments</label>
+  <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Description of event">
+</div>
+
+<div class="form-group"><!-- Web address for more info  -->
+  <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Web address for more info">
+</div>
+
+</form>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
